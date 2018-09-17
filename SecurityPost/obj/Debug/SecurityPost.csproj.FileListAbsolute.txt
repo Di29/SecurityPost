@@ -1,0 +1,17 @@
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\bin\Debug\SecurityPost.exe.config
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\bin\Debug\SecurityPost.exe
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\bin\Debug\SecurityPost.pdb
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\bin\Debug\Newtonsoft.Json.dll
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\bin\Debug\Twilio.dll
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\bin\Debug\Newtonsoft.Json.xml
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\bin\Debug\Twilio.xml
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\obj\Debug\SecurityPost.csprojAssemblyReference.cache
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\obj\Debug\SecurityPost.csproj.CoreCompileInputs.cache
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\obj\Debug\SecurityPost.csproj.CopyComplete
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\obj\Debug\SecurityPost.exe
+C:\Users\УринбасаровД\source\repos\InterfacesLesson\SecurityPost\obj\Debug\SecurityPost.pdb
