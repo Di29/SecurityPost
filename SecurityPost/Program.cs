@@ -13,6 +13,23 @@ namespace SecurityPost
     {
         static void Main(string[] args)
         {
+            List<User> UsersList = new List<User>();
+            Console.WriteLine(@"Меню: 
+               1. Список всех пользователей
+               2. Добавить пользователя
+               3. Удалить пользователя
+               4. Измениить пользователя");
+
+            string menu = Console.ReadLine();
+
+            switch (menu)
+            {
+                case ("1"):
+                    User user = new User();
+                    user.UserCreate();
+                    UsersList.Add(user);
+                    break;
+            }
 
 
 
@@ -36,19 +53,7 @@ namespace SecurityPost
 
 
 
-
-            /*const string accountSid = "AC21972c77ed7f6cb6d8e53a6e91e73544";
-            const string accountToken = "216baea766b06c889b04454533e820b6";
-
-            TwilioClient.Init(accountSid, accountToken);
-
-            var message = MessageResource.Create(
-                body: "Congratulation! First Twilio message!",
-                from: new PhoneNumber("+13163303949"),
-                to: new PhoneNumber("++77081762343")
-             );
-
-            Console.WriteLine(message.Sid);*/
+            
         }
     }
 }

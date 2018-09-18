@@ -8,7 +8,9 @@ namespace SecurityPost
 {
     public interface IUserMethod
     {
+        void UserCreate(string login, string password, string phoneNum);
 
+        int RandomNumber(int minNum, int maxNum);
 
 
 
