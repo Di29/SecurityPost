@@ -8,11 +8,12 @@ namespace SecurityPost
 {
     public interface IUserMethod
     {
-        void UserCreate(string login, string password, string phoneNum);
+        void UserCreate();
 
         int RandomNumber(int minNum, int maxNum);
 
-
+        bool isVerifyed(int recievedNum, int userNum);
+        
 
     }
 }

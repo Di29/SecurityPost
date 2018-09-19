@@ -16,7 +16,8 @@ namespace SecurityPost
         const int RANDOM_MIN = 0000;
         const int RANDOM_MAX = 9999;
         int _verifyCode;
-        Random random;
+        int userCode = 0;
+        Random random = new Random();
 
         public string Login { get; set; }
 
@@ -42,11 +43,26 @@ namespace SecurityPost
         {
             Console.WriteLine("Введите логин: ");
             Login = Console.ReadLine();
+
             Console.WriteLine("Введите пароль: ");
             Password = Console.ReadLine();
+
             Console.Write("Введите номер телефона:+7 ");
             PhoneNumber = Console.ReadLine();
+
             _verifyCode = RandomNumber(RANDOM_MIN, RANDOM_MAX);
+            SmsSend(_accountSid, _accountToken, PhoneNumber, _verifyCode);
+
+            Console.WriteLine("Сейчас на ваш номер придет СМС с кодом. Введите его ниже: ");
+            string text = Console.ReadLine();
+
+            bool isParsed = int.TryParse(text, out userCode);
+            if (!isVerifyed(_verifyCode, userCode))
+            {
+                Console.WriteLine("Не правильный код!");
+            }
+            else
+                Console.WriteLine("Верификация прошла успешно");
         }
 
         public void SmsSend(string accountSid, string accountToken, string ToPhoneNumber, int verifyCode)
@@ -59,7 +75,7 @@ namespace SecurityPost
             var message = MessageResource.Create(
                 body: verifyCode.ToString(),
                 from: new PhoneNumber("+13163303949"),
-                to: new PhoneNumber(ToPhoneNumber)
+                to: new PhoneNumber("+7" + ToPhoneNumber)
                 );
         }
 
@@ -67,5 +83,14 @@ namespace SecurityPost
         {
             return random.Next(minNum, maxNum);
         }
+
+        public bool isVerifyed(int recievedNum, int userNum)
+        {
+            if (recievedNum != userNum)
+                return false;
+            else return true;
+        }
+
+
     }
 }
